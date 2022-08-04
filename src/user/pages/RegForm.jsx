@@ -76,9 +76,9 @@ const RegForm = () => {
 						type='submit'
 						className='w-56'
 					>
-						Login
+						SignUp
 					</Button>
-					<NavLink to='/reg' className='underline hover:text-keppel'>
+					<NavLink to='/login' className='underline hover:text-keppel'>
 						Alredy have an account? Login
 					</NavLink>
 				</Form>

@@ -1,10 +1,17 @@
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { Button } from '@mui/material';
 
+import { userSelector } from '../../features/userSlice';
+import { loginUser } from '../../features/userSlice';
+
 const LoginForm = () => {
+	const dispatch = useDispatch();
+	const user = useSelector((state) => state.user);
+
 	return (
 		<div className='flex items-center justify-center h-full'>
 			<Formik
@@ -18,8 +25,10 @@ const LoginForm = () => {
 						.required('Required'),
 				})}
 				onSubmit={(values, { setSubmitting }) => {
+					dispatch(loginUser(values.email));
 					setTimeout(() => {
 						alert(JSON.stringify(values, null, 2));
+						console.log(user);
 						setSubmitting(false);
 					}, 400);
 				}}
