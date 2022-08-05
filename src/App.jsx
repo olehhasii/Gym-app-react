@@ -8,6 +8,7 @@ import LoginForm from './user/pages/LoginForm';
 import RegForm from './user/pages/RegForm';
 import MainNotAuth from './main/pages/MainNotAuth';
 import PrivateRoute from './features/PrivateRoute';
+import UserPrograms from './programs/pages/UserPrograms';
 
 const App = () => {
 	return (
@@ -27,9 +28,9 @@ const App = () => {
 					<PrivateRoute path='/main'>
 						<Main />
 					</PrivateRoute>
-					{/* <Route path='/main' exact>
-						<Main />
-					</Route> */}
+					<PrivateRoute path='/programs'>
+						<UserPrograms />
+					</PrivateRoute>
 				</>
 			</Switch>
 		</BrowserRouter>

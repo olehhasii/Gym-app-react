@@ -1,10 +1,14 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { Redirect, useHistory } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import { Button } from '@mui/material';
 
 const MainNotAuth = () => {
 	const history = useHistory();
-
+	const isAuth = useSelector((state) => state.user.isAuth);
+	if (isAuth) {
+		return <Redirect to='/main' />;
+	}
 	return (
 		<div className='w-full h-full bg-white flex flex-col items-center justify-center'>
 			<h1 className='font-bold text-4xl text-center'>
