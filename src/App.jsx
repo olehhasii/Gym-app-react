@@ -6,6 +6,8 @@ import './App.css';
 import Main from './main/pages/Main';
 import LoginForm from './user/pages/LoginForm';
 import RegForm from './user/pages/RegForm';
+import MainNotAuth from './main/pages/MainNotAuth';
+import PrivateRoute from './features/PrivateRoute';
 
 const App = () => {
 	return (
@@ -17,11 +19,17 @@ const App = () => {
 				<Route path='/reg' exact>
 					<RegForm />
 				</Route>
+				<Route path='/' exact>
+					<MainNotAuth />
+				</Route>
 				<>
 					<SideMenu />
-					<Route path='/' exact>
+					<PrivateRoute path='/main'>
 						<Main />
-					</Route>
+					</PrivateRoute>
+					{/* <Route path='/main' exact>
+						<Main />
+					</Route> */}
 				</>
 			</Switch>
 		</BrowserRouter>

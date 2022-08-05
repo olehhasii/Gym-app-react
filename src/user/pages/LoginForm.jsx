@@ -1,16 +1,16 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { Button } from '@mui/material';
 
-import { userSelector } from '../../features/userSlice';
 import { loginUser } from '../../features/userSlice';
 
 const LoginForm = () => {
 	const dispatch = useDispatch();
 	const user = useSelector((state) => state.user);
+	const history = useHistory();
 
 	return (
 		<div className='flex items-center justify-center h-full'>
@@ -31,6 +31,7 @@ const LoginForm = () => {
 						console.log(user);
 						setSubmitting(false);
 					}, 400);
+					history.push('/main');
 				}}
 			>
 				<Form className='flex flex-col items-center justify-around rounded-xl bg-white w-96 h-96'>
