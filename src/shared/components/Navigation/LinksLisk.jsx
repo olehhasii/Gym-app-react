@@ -15,27 +15,27 @@ const LinksLisk = () => {
 				</MenuLink>
 			</li>
 			<li className='mb-4'>
-				<MenuLink to='/' linkName='Workouts'>
+				<MenuLink to='/workouts' linkName='Workouts'>
 					<FaDumbbell className='w-6 h-6' />
 				</MenuLink>
 			</li>
 			<li className='mb-4'>
-				<MenuLink to='/' linkName='Schedule'>
+				<MenuLink to='/schedule' linkName='Schedule'>
 					<BsCalendarDate className='w-6 h-6' />
 				</MenuLink>
 			</li>
 			<li className='mb-4 '>
-				<MenuLink to='/' linkName='My meals'>
+				<MenuLink to='/meals' linkName='My meals'>
 					<GiMeal className='w-6 h-6' />
 				</MenuLink>
 			</li>
 			<li className='mb-4'>
-				<MenuLink to='/' linkName='Profile'>
+				<MenuLink to='/profile' linkName='Profile'>
 					<FaUserCircle className='w-6 h-6' />
 				</MenuLink>
 			</li>
 			<li className='mb-4 '>
-				<MenuLink to='/' linkName='Results'>
+				<MenuLink to='/results' linkName='Results'>
 					<GiProgression className='w-6 h-6' />
 				</MenuLink>
 			</li>

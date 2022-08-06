@@ -5,7 +5,9 @@ import ProgramItem from '../components/ProgramItem';
 
 const UserPrograms = () => {
 	return (
-		<Card className='flex items-center justify-center'>
+		<Card className='flex flex-wrap justify-start overflow-auto'>
+			<ProgramItem />
+			<ProgramItem />
 			<ProgramItem />
 		</Card>
 	);

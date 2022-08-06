@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 const MenuLink = (props) => {
 	return (
 		<NavLink
+			activeClassName='bg-gray-300'
 			to={props.to}
 			className={`flex items-center w-full h-full  rounded px-3 mt-3 ${
 				props.hover || 'hover:bg-gray-300'
