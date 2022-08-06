@@ -8,10 +8,14 @@ import MenuLink from './MenuLink';
 
 const LinksLisk = () => {
 	return (
-		<ul className='mt-3 w-full px-2 border-t border-gray-700 flex flex-col items-center'>
-			<li className='mb-4'>
-				<MenuLink to='/programs' linkName='Programs'>
-					<AiOutlineAppstoreAdd className='w-6 h-6' />
+		<ul className='mt-3 w-full px-4 border-t border-gray-700 '>
+			<li className='mb-4 flex justify-start'>
+				<MenuLink
+					to='/programs'
+					linkName='Programs'
+					className='py-2 px-4 rounded-md'
+				>
+					<AiOutlineAppstoreAdd className='w-5 h-5' />
 				</MenuLink>
 			</li>
 			<li className='mb-4'>

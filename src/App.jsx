@@ -25,9 +25,7 @@ const App = () => {
 				</Route>
 				<>
 					<SideMenu />
-					<PrivateRoute path='/main'>
-						<Main />
-					</PrivateRoute>
+					<PrivateRoute path='/main'>{/* <Main /> */}</PrivateRoute>
 					<PrivateRoute path='/programs'>
 						<UserPrograms />
 					</PrivateRoute>
