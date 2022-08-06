@@ -5,7 +5,8 @@ module.exports = {
 	content: ['./src/**/*.{js,jsx,ts,tsx}'],
 	theme: {
 		extend: {
-			width: { '700px': '700px' },
+			width: { '700px': '700px', '208px': '208px' },
+			minWidth: { '208px': '208px' },
 			colors: {
 				magnolia: '#f7f0f5',
 				cyan: '#e0fbfcff',

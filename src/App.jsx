@@ -9,6 +9,7 @@ import RegForm from './user/pages/RegForm';
 import MainNotAuth from './main/pages/MainNotAuth';
 import PrivateRoute from './features/PrivateRoute';
 import UserPrograms from './programs/pages/UserPrograms';
+import Header from './shared/components/Header/Header';
 
 const App = () => {
 	return (
@@ -23,13 +24,16 @@ const App = () => {
 				<Route path='/' exact>
 					<MainNotAuth />
 				</Route>
-				<>
+				<div className='flex'>
+					<Header />
 					<SideMenu />
-					<PrivateRoute path='/main'>{/* <Main /> */}</PrivateRoute>
+					<PrivateRoute path='/main'>
+						<Main />
+					</PrivateRoute>
 					<PrivateRoute path='/programs'>
 						<UserPrograms />
 					</PrivateRoute>
-				</>
+				</div>
 			</Switch>
 		</BrowserRouter>
 	);

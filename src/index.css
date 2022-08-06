@@ -31,7 +31,11 @@ body {
 #root {
  height: 100vh;
  position: relative;
- 
+
+}
+
+.header-width {
+    width: calc(100% - 207px);
 }
 
 .center {

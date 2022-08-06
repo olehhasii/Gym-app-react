@@ -5,10 +5,9 @@ import CardsList from '../components/CardsList';
 
 const Main = () => {
 	return (
-		<div className='center  w-5/6 h-5/6  bg-white rounded-xl '>
-			<SearchInput />
+		<main className='pt-16'>
 			<CardsList />
-		</div>
+		</main>
 	);
 };
 
