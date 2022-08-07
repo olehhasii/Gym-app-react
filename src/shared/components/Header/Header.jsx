@@ -8,9 +8,9 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => {
 	return (
-		<header className='flex justify-between  border-0 border-b border-solid border-gray-300 px-10 h-20 fixed top-0 right-0 w-72 opacity-80 header-width z-10'>
+		<header className='flex justify-between border-0 border-b border-solid border-gray-300 px-10 h-20 fixed top-0 right-0 w-72 header-width '>
 			<SearchInput />
-			<div className='flex items-center'>
+			<div className='flex items-center z-20'>
 				<FormControlLabel
 					label={<MdDarkMode className='w-6 h-6' />}
 					control={<Switch />}

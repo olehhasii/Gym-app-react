@@ -6,7 +6,7 @@ const MenuLink = (props) => {
 		<NavLink
 			activeClassName=' bg-lightGreen'
 			to={props.to}
-			className={`flex items-center w-full h-full py-3 px-4 rounded-md mt-3  ${
+			className={`flex items-center w-full h-full py-3 px-4 rounded-md   ${
 				props.hover || 'hover:bg-gray-200'
 			}`}
 		>

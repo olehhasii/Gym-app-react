@@ -2,30 +2,25 @@ import React from 'react';
 import { FaBiking, FaUserCircle } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 
-import LinksLisk from './LinksLisk';
 import MenuLink from './MenuLink';
+import MenuSections from './MenuSections';
 
 const SideMenu = () => {
 	return (
 		<div className='min-w-208px h-full'>
 			<nav className='fixed left-0 top-0 flex flex-col overflow-hidden w-208px h-full text-lg bg-white border-r border-0 border-solid border-gray-300'>
 				<div className='m-4 mt-2'>
-					{/* <MenuLink to='/main' linkName='Gym App' text='font-bold text-l'>
-					<FaBiking className='w-6 h-6 mr-2' />
-				</MenuLink> */}
 					<NavLink
 						activeClassName='bg-lightGreen'
 						to='/main'
-						className='flex items-center justify-center w-full h-full p-1 rounded-md mt-3  
+						className='flex items-center w-full h-full p-1 px-4 rounded-md mt-3  
 						 hover:bg-gray-200'
 					>
 						<FaBiking className='w-6 h-6 mr-2' />
 						<span className=''>Gym app</span>
 					</NavLink>
 				</div>
-				{/* <div className='mt-4 h-px bg-black w-11/12 flex justify-center'></div> */}
-				<hr className='w-11/12 mx-auto mt-2 bg-gray-200' />
-				<LinksLisk />
+				{<MenuSections />}
 				<div className='w-full mt-auto px-2 flex items-center justify-center h-16 bg-gray-200 hover:bg-gray-300'>
 					<MenuLink
 						linkName='Account'
