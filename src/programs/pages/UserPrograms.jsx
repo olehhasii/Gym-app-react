@@ -1,6 +1,6 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-import Card from '../../shared/components/UI/Card';
 import ProgramItem from '../components/ProgramItem';
 
 const DUMMY_EXERCISES = [
@@ -44,11 +44,26 @@ const DUMMY_EXERCISES = [
 
 const UserPrograms = () => {
 	return (
-		<Card className='flex flex-wrap justify-start overflow-auto'>
-			<ProgramItem />
-			<ProgramItem />
-			<ProgramItem />
-		</Card>
+		<main className='pt-24 w-full'>
+			<div className='ml-14'>
+				<h2 className='font-bold text-2xl'>Your programs</h2>
+				<div className='mt-2'>
+					<NavLink to='/program/create' className='underline mr-3'>
+						Create program
+					</NavLink>
+					<NavLink to='/workouts' className='underline mr-3'>
+						Check ready workouts
+					</NavLink>
+				</div>
+			</div>
+			<div className=' flex flex-wrap justify-between'>
+				<ProgramItem emoji='🏋️' programName='Chest + Triceps' />
+				<ProgramItem emoji='🏋️' programName='Chest + Triceps' />
+				<ProgramItem emoji='🏋️' programName='Chest + Triceps' />
+				<ProgramItem emoji='🏋️' programName='Chest + Triceps' />
+				<ProgramItem emoji='🏋️' programName='Chest + Triceps' />
+			</div>
+		</main>
 	);
 };
 
