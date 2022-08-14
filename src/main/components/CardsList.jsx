@@ -38,20 +38,20 @@ const CardsList = () => {
 					⌛
 				</div>
 				<div>
-					<span className='text-lg font-bold'>27h</span>
+					<span className='text-lg font-bold'>13h</span>
 					<h2 className='text-gray-600'>Time this week</h2>
 				</div>
 			</MainCard>
 			<MainCard
 				width='w-1/4'
-				className='h-44 bg-uraniumBlue '
+				className='h-44 bg-magnolia'
 				flex='flex items-center justify-center'
 			>
 				<div className='mr-6 text-4xl bg-white w-14 h-16 flex items-center justify-center rounded-2xl'>
 					💪
 				</div>
 				<div>
-					<span className='text-lg font-bold'>0</span>
+					<span className='text-lg font-bold'>4</span>
 					<h2 className='text-gray-600'>Workouts this week</h2>
 				</div>
 			</MainCard>
